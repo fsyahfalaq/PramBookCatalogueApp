@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PramBookCatalogue</string>
+    <string name="nama">Muhammad Fikri Syahfalaq P</string>
+    <string name="email">fsafalaq@gmail.com</string>
+    <string name="book_cover">Book cover</string>
+    <string name="rating_on_goodreads">Rating on goodreads:</string>
+    <string name="by_pramoedya_ananta_toer">by Pramoedya Ananta Toer</string>
+    <string name="buy_on">Buy on:</string>
+    <string name="ecommerce_logo">eCommerce Logo</string>
+    <string name="isbn">ISBN</string>
+</resources>

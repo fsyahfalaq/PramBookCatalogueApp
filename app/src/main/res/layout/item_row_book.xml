@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="#f5f5f5"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        tools:src="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:background="@color/colorAccent"
+            android:textStyle="bold"
+            tools:text="Book Title" />
+
+        <TextView
+            android:id="@+id/tv_item_writer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/by_pramoedya_ananta_toer" />
+
+        <TextView
+            android:id="@+id/tv_item_ratingby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/rating_on_goodreads" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:id="@+id/rt_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@android:color/holo_orange_dark"
+            android:secondaryProgressTint="#00000000"
+            android:numStars="5"
+            tools:rating="2.45"
+            android:stepSize="0.01" />
+
+        <TextView
+            android:id="@+id/tv_item_ISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/isbn"
+            tools:text="ISBN XXXXXXXXXXXX" />
+    </LinearLayout>
+
+</RelativeLayout>
